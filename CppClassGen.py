@@ -15,8 +15,8 @@ class CLASSNAME {
 	public :
 	// CONSTRUCTORS
 		CLASSNAME();
-		CLASSNAME(CLASSNAME &other);
-		CLASSNAME &operator=(CLASSNAME &other);
+		CLASSNAME(const CLASSNAME &other);
+		CLASSNAME &operator=(const CLASSNAME &other);
 	//DESTUCTORS
 		~CLASSNAME();
 	//GETTERS
@@ -44,11 +44,11 @@ base_cpp = """
 
 CLASSNAME::CLASSNAME() {}
 
-CLASSNAME::CLASSNAME(CLASSNAME &other)
+CLASSNAME::CLASSNAME(const CLASSNAME &other)
 {
 }
 
-CLASSNAME &CLASSNAME::operator=(CLASSNAME &other)
+CLASSNAME &CLASSNAME::operator=(const CLASSNAME &other)
 {
 }
 
